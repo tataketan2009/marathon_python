@@ -6,3 +6,4 @@ print("Welcome to the Number Guessing Game!")
 
 guess = int(input("Guess a number between 1 and 100: "))
 
+print("good morning")
