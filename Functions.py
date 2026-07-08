@@ -34,3 +34,10 @@ def add_item(lst, item):
 
 food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
 print(add_item(food_stuff, 'Meat'))
+
+def remove_item(lst, item):
+    lst.remove(item)
+    return lst
+
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_stuff, 'Mango'))
