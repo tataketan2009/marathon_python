@@ -25,3 +25,12 @@ reversed_result = reverse_my_list(my_list)
 
 
 print("Reversed list:", reversed_result)
+
+
+
+def add_item(lst, item):
+    lst.append(item)
+    return lst
+
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_stuff, 'Meat'))
