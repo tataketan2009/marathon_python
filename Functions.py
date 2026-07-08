@@ -41,3 +41,13 @@ def remove_item(lst, item):
 
 food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
 print(remove_item(food_stuff, 'Mango'))
+
+
+
+for i in range(0,6):
+    print(i)
+
+append_list = []
+append_list.append(i)
+
+print(append_list)
