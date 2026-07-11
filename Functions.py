@@ -44,10 +44,26 @@ print(remove_item(food_stuff, 'Mango'))
 
 
 
-for i in range(0,6):
-    print(i)
+def sum_of_numbers(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
 
-append_list = []
-append_list.append(i)
 
-print(append_list)
+print(sum_of_numbers(5))  
+
+
+def greet_user(name):
+    return f"Hello, {name}!"
+
+name = input("Enter your name: ")
+greeting = greet_user(name)
+print(greeting)
+
+
+def fav_book(managment, book):
+    return f"My favorite book is '{book}' and I recommend '{managment}'."
+
+answer = fav_book("The Great Gatsby", "To Kill a Mockingbird")
+print(answer)
