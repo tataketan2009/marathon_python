@@ -67,3 +67,9 @@ def fav_book(managment, book):
 
 answer = fav_book("The Great Gatsby", "To Kill a Mockingbird")
 print(answer)
+ 
+def fav_game(game):
+    return f"My favorite game is '{game}'."
+
+answer = fav_game("The Legend of Zelda: Breath of the Wild")
+print(answer)
