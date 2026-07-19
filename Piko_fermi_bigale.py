@@ -5,3 +5,5 @@ import random
 
 n = random.randint(111, 1000)
 
+print("Welcome to the Pico Fermi Bigale Game!")
+
