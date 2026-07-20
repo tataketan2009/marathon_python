@@ -19,3 +19,8 @@ print("Sorted Scores:", score)
 
 runner = score[-2]
 print("Runner-up score:", runner)
+
+
+
+
+
