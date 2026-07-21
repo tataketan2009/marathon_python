@@ -1,0 +1,113 @@
+=============================================================
+                    LINUX BASICS - STUDY NOTES
+=============================================================
+
+TOPIC 1: WHAT IS LINUX?
+-------------------------------------------------------------
+- Open-source, free operating system.
+- Based on UNIX.
+- Core component = the KERNEL (manages hardware, memory, and processes).
+- "Everything is a file" philosophy.
+
+TOPIC 2: DISTRIBUTIONS (DISTROS)
+-------------------------------------------------------------
+A Distro = Linux Kernel + System Software + Package Manager.
+
+Common Distros:
+  1. Ubuntu / Debian  →  Best for beginners.
+  2. Fedora / RHEL    →  Best for enterprise/servers.
+  3. Arch             →  For advanced users who like customization.
+
+TOPIC 3: THE TERMINAL & SHELL
+-------------------------------------------------------------
+- Terminal = the text-based interface.
+- Shell = the program that interprets commands (most common = BASH).
+- Open terminal:  CTRL + ALT + T.
+
+TOPIC 4: ESSENTIAL COMMANDS (NAVIGATION)
+-------------------------------------------------------------
+COMMAND        | DESCRIPTION                        | EXAMPLE
+---------------|------------------------------------|-------------------
+pwd            | Print Working Directory            | pwd
+ls             | List files/folders                 | ls -la
+cd             | Change Directory                   | cd /home/user
+mkdir          | Make Directory                     | mkdir new_folder
+rmdir          | Remove empty Directory             | rmdir empty_folder
+touch          | Create an empty file               | touch file.txt
+cp             | Copy file/directory                | cp a.txt b.txt
+mv             | Move or rename file/directory      | mv a.txt /new/
+rm             | Remove (delete) file               | rm file.txt
+cat            | Display file content               | cat myfile.txt
+
+TOPIC 5: SYSTEM & USER COMMANDS
+-------------------------------------------------------------
+COMMAND        | DESCRIPTION                        | EXAMPLE
+---------------|------------------------------------|-------------------
+whoami         | Shows current username             | whoami
+sudo           | Run command as admin (root)        | sudo apt update
+passwd         | Change user password               | passwd
+clear          | Clear terminal screen              | clear
+man            | Show manual for a command          | man ls
+
+TOPIC 6: SHORTCUTS
+-------------------------------------------------------------
+CTRL + C   →  Stop current command.
+CTRL + D   →  Exit terminal/EOF signal.
+CTRL + A   →  Move cursor to start of line.
+CTRL + E   →  Move cursor to end of line.
+CTRL + R   →  Reverse search command history.
+CTRL + L   →  Clear screen (same as 'clear').
+
+TOPIC 7: LINUX FILE SYSTEM STRUCTURE
+-------------------------------------------------------------
+/          →  Root directory (top of the tree).
+/home/     →  Personal folders for users.
+/etc/      →  System configuration files.
+/var/      →  Variable data (logs, databases).
+/bin/      →  Essential system binaries/programs.
+/tmp/      →  Temporary files (deleted on reboot).
+
+Paths:
+- Absolute Path: Starts from root. Example: /home/john/file.txt
+- Relative Path: Starts from current directory. Example: Documents/file.txt
+
+TOPIC 8: FILE PERMISSIONS
+-------------------------------------------------------------
+Every file has 3 permission types:
+  r = Read
+  w = Write
+  x = Execute
+
+And 3 user classes:
+  u = Owner (User)
+  g = Group
+  o = Others
+
+Example:  -rwxr--r--
+Breakdown:
+  -      : File type (- = file, d = directory)
+  rwx    : Owner has Read, Write, Execute
+  r--    : Group has only Read
+  r--    : Others have only Read
+
+To change permissions, use:  chmod
+
+TOPIC 9: PACKAGE MANAGEMENT
+-------------------------------------------------------------
+Debian/Ubuntu (uses APT):
+  sudo apt update          →  Refresh package list
+  sudo apt install <name>  →  Install software
+  sudo apt upgrade         →  Upgrade all packages
+
+Fedora/RHEL (uses DNF):
+  sudo dnf install <name>  →  Install software
+
+TOPIC 10: GETTING HELP
+-------------------------------------------------------------
+- man <command>   →  Shows the official manual.
+- <command> --help →  Quick help for most commands.
+- Google/StackOverflow →  Your best friend for troubleshooting.
+
+=============================================================
+                  END OF NOTES
+=============================================================
