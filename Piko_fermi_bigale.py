@@ -6,6 +6,11 @@ def generate_secret():
         digits[0] = random.choice('123456789')
     return ''.join(digits)
 
+
+def save_high_score(new_score):
+    with open('final_score.txt', 'w') as file:
+        file.write(str(new_score)) 
+
 secret = generate_secret()
 
 print("Welcome to the Pico Fermi Bagel Game!")
@@ -15,6 +20,7 @@ print("  Pico   → correct digit, wrong position")
 print("  Fermi  → correct digit, right position")
 print("  Bagel  → no digit correct")
 
+high_score = 0
 attempts = 0
 while True:
     guess = input("Enter your guess (3 digits): ").strip()
@@ -28,7 +34,7 @@ while True:
         break
 
     feedback = []
-    #print(secret)  # For debugging purposes, you can remove this line in production
+    print(secret)  # For debugging purposes, you can remove this line in production
     for i in range(3):
         if guess[i] == secret[i]:
             feedback.append("Fermi")
@@ -38,3 +44,17 @@ while True:
         feedback.append("Bagel")
 
     print("Feedback:", " ".join(feedback))
+
+
+#  CHECK THE HIGH SCORE AFTER THE GAME IS COMPLETED ---
+print("\n========================================")
+print(f"📊 Your final score: {attempts}")
+
+# Compare the player's score with the high score from STEP 1
+if attempts > high_score:
+    print(f" NEW RECORD! You beat the old high score of {high_score}!")
+    save_high_score(attempts)  
+    print(f" High score updated to {attempts}!")
+else:
+    print(f" Good game! The high score remains {high_score}.")
+    print(f" You needed {high_score - attempts} more points to break the record.")
