@@ -52,7 +52,7 @@ print(f"📊 Your final score: {attempts}")
 
 # Compare the player's score with the high score from STEP 1
 if attempts > high_score:
-    print(f" NEW RECORD! You beat the old high score of {high_score}!")
+    print(f" NEW RECORD! You beat the old high score of {high_score}!") 
     save_high_score(attempts)  
     print(f" High score updated to {attempts}!")
 else:
