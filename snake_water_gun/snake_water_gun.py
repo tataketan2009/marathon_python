@@ -30,7 +30,10 @@ rounds_to_play = 10
 
 for round_num in range(1, rounds_to_play + 1):
     print(f"\n--- Round {round_num} ---")
+    computer = random.choice(choices)
+    print(f"Computer chose: {computer}")
     user = input("Choose Snake, Water, or Gun: ").lower().strip()
+   
     
     # Validate input
     if user not in choices:
