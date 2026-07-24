@@ -1,1 +1,0 @@
-This is a sample paragraph. This paragraph is used for testing the replace word functionality. The word 'paragraph'  ######### will be replaced with 'sentence' in this text.
