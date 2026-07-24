@@ -3,7 +3,7 @@ import random
 # --- STEP 1: READ the high score BEFORE the game starts ---
 def get_high_score():
     try:
-        with open('highscore.txt', 'r') as file:
+        with open('data/highscore.txt', 'r') as file:
             # Read the number and convert it to an integer
             return int(file.read())
     except FileNotFoundError:
@@ -15,7 +15,7 @@ def get_high_score():
 
 # --- STEP 2: WRITE the new high score to the file ---
 def save_high_score(new_score):
-    with open('highscore.txt', 'w') as file:
+    with open('data/highscore.txt', 'w') as file:
         file.write(str(new_score))  # Convert integer to string before saving
 
 # Load the current champion score ---
