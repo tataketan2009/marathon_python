@@ -1,0 +1,1 @@
+this is the sentence which should be changed into a censored version. The words 'Donkey', 'idiot', 'STUPID', and 'fool' will be replaced.
